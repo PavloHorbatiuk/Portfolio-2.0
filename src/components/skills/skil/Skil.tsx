@@ -1,5 +1,5 @@
 import React from 'react'
-import './skil.css'
+import s from './skil.module.css'
 
 
 export type SkilType = {
@@ -9,10 +9,10 @@ export type SkilType = {
 
 function Skil(props: SkilType) {
     return (
-        <div className='generalContainer'>
-            <div className="contentContainer">
-                <img className='img' src={props.imgLink} alt='' />
-                <h5 className='title'>{props.title}</h5>
+        <div className={s.generalContainer}>
+            <div className={s.contentContainer}>
+                <img className={s.img} src={props.imgLink} alt='' />
+                <h5 className={s.title}>{props.title}</h5>
             </div>
         </div>
     )
