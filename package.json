@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pavlohorbatiuk.github.io/Portfolio-2.0",
+  "homepage": "https://pavlohorbatiuk.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@testing-library/jest-dom": "^5.14.1",

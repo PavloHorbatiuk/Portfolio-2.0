@@ -11,7 +11,7 @@ import ContactsPage from './routes/ContactsPage'
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} />
+      <Route path='/portfolio' element={<App />} />
       <Route path='/home' element={<MainPage />} />
       <Route path='/skills' element={<SkillPage />} />
       <Route path='/projects' element={<ProjectsPage />} />

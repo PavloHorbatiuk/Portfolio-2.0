@@ -2,7 +2,6 @@ import React from 'react'
 import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
 import { BsTelegram } from 'react-icons/bs'
 import './Footer.scss'
-import { Link } from 'react-scroll'
 
 const Footer = () => {
   return (
