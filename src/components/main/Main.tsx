@@ -22,15 +22,15 @@ function Main() {
             >
                 <div className={s.container}>
                     <div className={s.content}>
-                        <div><h1>I'm Pavlo Horbatiuk</h1></div>
-                        <span className={s.text}>
+                        <div><h1><span>I'm</span> Pavlo Horbatiuk</h1></div>
+                        <p className={s.text}>
                             I'm a front‑end developer focused on
                             crafting clean &amp; user‑friendly experiences, I am passionate about
                             building excellent software that improves the lives of those
                             around me.
-                        </span>
-                        <div className={s.btnDiv}>
-                            <Link className={s.btn} to={urlCv} target="_blank" download >
+                        </p>
+                        <div>
+                            <Link to={urlCv} target="_blank" download >
                                 <button > Download CV</button>
                             </Link>
                         </div>

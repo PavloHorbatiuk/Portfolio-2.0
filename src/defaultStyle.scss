@@ -100,9 +100,7 @@ ul {
   cursor: pointer;
 }
 
-span {
-  color: #fff;
-}
+
 a{
   color: var(--color-lightn);
   
@@ -119,18 +117,29 @@ a:hover{
 }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.4;
+  color: #fff;
+  font-family: 'Lato',sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 15px;
+  padding: 0;
 }
-
+span {
+  color: #fff;
+}
 h1 {
-  font-size: 3.5rem;
-  color: #ff014f;
+    color: var(--color-primary);
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    word-spacing: 5px;
 }
 
 h2 {
   font-size: 3rem;
-  color: #ff014f;
+  color:var(--color-primary);
 }
 
 .container {
@@ -139,36 +148,36 @@ h2 {
 }
 
 button {
-  border-radius: 6px;
-    background: linear-gradient(145deg, #1e2024, #23272b);
-    box-shadow: var(--shadow-1);
-    transition: var(--transition);
-    position: relative;
-    z-index: 2;
-    font-size: 14px;
-    font-weight: 500;
-    border: 0 none;
-    cursor: pointer;
-    color: var( --color-primary)
+ padding: 16px 48px;
+ background:none;
+ border:2px solid #131313;
+ color:#fff;
+ font-size: 20px;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s;
 }
 
-button:hover {
-  background-color: #0d2154;
-  border: 1px solid #232709;
+button::before {
+ content:"";
+ position: absolute;
+ width: 100px;
+ height: 120%;
+ background-color: rgba(255, 255, 255, 0.4);
+ top:50%;
+ transform: skew(30deg) translate(-150%, -50%);
+ transition: all 0.5s;
+}
+button:hover{
+ background-color: var(--color-primary);
+ color:#fff;
+}
+button:hover::before{
+  transform: skew(30deg) translate(-150%, -50%);
+  transition-delay: 0.1s;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: auto;
-  top: 0;
-  width: 0;
-  transition: all .35s ease;
-  background: #1c1d24;
-  z-index: -1
-}
 @media only screen and (min-width: 1200px) and (max-width: 1599px){
 button {
     font-size: 13px;
@@ -176,3 +185,37 @@ button {
     line-height: 21px;
 }
 }
+@media screen and (max-width: 1024px ) {
+  h1{
+    font-size: 40px
+  }
+}
+@media screen and (max-width: 769px ) {
+  h1{
+    font-size: 40px
+  }
+  p{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px ) {
+  h1{
+    margin-bottom: 5px;
+    font-size: 30px;
+  } 
+}
+
+
+// button {
+//   border-radius: 6px;
+//     background: linear-gradient(145deg, #1e2024, #23272b);
+//     box-shadow: var(--shadow-1);
+//     transition: var(--transition);
+//     position: relative;
+//     z-index: 2;
+//     font-size: 14px;
+//     font-weight: 500;
+//     border: 0 none;
+//     cursor: pointer;
+//     color: var( --color-primary)
+// }

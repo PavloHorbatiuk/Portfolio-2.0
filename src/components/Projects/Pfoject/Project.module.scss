@@ -8,8 +8,6 @@
     border-radius: 10px;
     box-shadow: 0 0 15px 7px #000;
 }
-
-
 .contnent  {   
     padding: 1rem;
     display: flex;
@@ -35,20 +33,4 @@
     object-fit: cover;
     transition: var(--transition);
     border-radius: 10px;
-}
-
-@media screen and (max-width: 480px) {
-    .generalContainer {
-        @include adaptive-value("width", 480, 175, 120, px, 1);
-        @include adaptive-value("margin", 480, 15, 10, px, 1);
-    }
-
-    .img {
-        @include adaptive-value("width", 480, 90.5, 63.5, px, 1);
-        @include adaptive-value("height", 480, 90.5, 63.5, px, 1);
-    }
-
-    .title {
-        @include adaptive-value("font-size", 480, 22, 20, px, 1);
-    }
 }

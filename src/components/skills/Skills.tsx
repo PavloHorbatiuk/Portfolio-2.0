@@ -9,6 +9,7 @@ import cssImg from './../../assets/Skills/css.png'
 import reduxImg from './../../assets/Skills/redux.png'
 import postmanImg from './../../assets/Skills/postman.png'
 import jsImg from './../../assets/Skills/1720372_code_javascript_js_icon.png'
+import { log } from 'console';
 const Zoom = require('react-reveal/Zoom')
 
 

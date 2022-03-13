@@ -25,19 +25,19 @@ const Contact = () => {
                         <h1><span>Contact</span> me</h1>
                         <div>
                             <label>Name</label>
-                            <input type="text" name="name" placeholder='Enter your name'/>
+                            <input type="text" name="name" placeholder='Enter your name' />
                         </div>
                         <div>
                             <label>Email</label>
-                            <input type="email" name="email" placeholder='Enter your email'/>
+                            <input type="email" name="email" placeholder='Enter your email' />
                         </div>
                         <div>
                             <label>Subject</label>
-                            <input type="text" name="subject" placeholder='Enter your subject'/>
+                            <input type="text" name="subject" placeholder='Enter your subject' />
                         </div>
                         <div>
                             <label>Message</label>
-                            <textarea name="message" rows={10} placeholder='Enter your text'/>
+                            <textarea name="message" rows={10} placeholder='Enter your text' />
                         </div>
                         <button>Submit</button>
                     </form>

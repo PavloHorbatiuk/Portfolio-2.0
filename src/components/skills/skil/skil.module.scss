@@ -32,6 +32,7 @@
     padding: 15px 10px;
 }
 
+
 @media screen and (max-width: 480px) {
     .generalContainer {
         @include adaptive-value("width", 480, 175, 120, px, 1);
@@ -47,3 +48,4 @@
         @include adaptive-value("font-size", 480, 22, 20, px, 1);
     }
 }
+  

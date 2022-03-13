@@ -28,8 +28,28 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1480px) {
-    .contentContainer {
-        @include adaptive-value("max-width", 1480, 70, 90, vw, 1);
+// @media screen and (max-width: 769px ) {
+    .generalContainer{
+        max-width: 100%;
+        max-height:100%;
     }
-}
+    .generalContainer .img {
+        max-width: 100%;
+        max-height:100%;
+        margin-top: 20px;
+        color:white;
+    }
+    .generalContainer .title{
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        word-break: break-word;
+        padding: 15px 10px;
+    }
+   
+    @media screen and (max-width: 1480px) {
+        .contentContainer {
+            @include adaptive-value("max-width", 1480, 70, 90, vw, 1);
+        }
+    }
