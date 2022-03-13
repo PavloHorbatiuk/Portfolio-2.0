@@ -24,17 +24,22 @@
     padding: 1rem;
 }
 
-.navbar .nav-menu {
+.navbar .navMenu {
     height: 100%;
     align-items: center;
     display: flex;
 }
 
 .navbar li {
-    padding: 1rem;
-    font-weight: 300;
-    color: #fff;
-    font-size: 1.3rem;
+    
+    color: var(--color-lightn);
+    transition: var(--transition);
+    font-size: 13px;
+    font-weight: var(--s-regular);
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    margin: 0.5rem 1rem;
+    padding: 0;
 }
 
 @media screen and (max-width: 940px) {
@@ -43,7 +48,7 @@
         z-index: 15;
     }
 
-    .navbar .nav-menu {
+    .navbar .navMenu {
         position: absolute;
         flex-direction: column;
         width: 100%;
@@ -73,5 +78,5 @@
 }
 
 .container li:hover {
-    color: rgb(214, 214, 18)
+    color: var(--color-primary);
 }

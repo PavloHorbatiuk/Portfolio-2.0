@@ -1,21 +1,26 @@
+@import '/src/App';
 .generalContainer {
     margin: 22px;
-    width: 175px;
-    background: linear-gradient(0deg, #777, #ccc, #ccc);
-    border-radius: 15px;
+    width: 150px;
+    background: linear-gradient(0deg, rgb(43, 42, 42), rgb(131, 130, 130), #ccc);
+    box-shadow: var(--shadow-1);
+    border-radius: 15px;    
 }
 
 .contentContainer {
-    display: flex;
+    display: flex;    
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
+   
 }
 
 .img {
-    width: 90.5px;
-    height: 90.5px;
+    width: 70.5px;
+    height: 70.5px;
     margin-top: 20px;
+    color:white;
 }
 
 .title {

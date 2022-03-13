@@ -1,7 +1,9 @@
+@import '/src/App';
+
 .generalContainer {
     display: flex;
     justify-content: center;
-    background-color: #131416
+    background-color: #131416;
 }
 
 .contentContainer {
@@ -10,7 +12,8 @@
     justify-content: space-evenly;
     align-items: center;
     width: 1100px;
-    max-width: 70vw;
+    max-width: 60vw;
+    height: 100vh;
 }
 
 .skillsContainer {
@@ -22,7 +25,11 @@
 }
 
 .title {
-    color: #fff;
-    padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 1480px) {
+    .contentContainer {
+        @include adaptive-value("max-width", 1480, 70, 90, vw, 1);
+    }
 }

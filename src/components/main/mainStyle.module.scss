@@ -1,0 +1,60 @@
+@import '/src/App';
+ .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2em;
+    padding: 3em;
+    width: 100%;
+    height: 100vh;
+    max-width: 1240px;
+    margin: auto;
+    .content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        margin: 1rem;
+        font-weight: 500;
+    }
+}
+.container {
+     .photo{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     }
+}
+.content {
+    span {
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--color-lightn);
+        padding-right: 16%;
+        opacity: 0.9;
+    };
+    h1{
+        color: #ff014f;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 22px;
+    }
+}
+.btnDiv{
+padding-top: 1rem;
+}
+
+.container .picture {
+    border: 0;
+    vertical-align: middle;
+    max-width: 80%;
+    height: 80%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+}
+@media screen and (max-width: 1480px) {
+    .content {
+        @include adaptive-value("max-width", 1480, 70, 90, vw, 1);
+    }
+}

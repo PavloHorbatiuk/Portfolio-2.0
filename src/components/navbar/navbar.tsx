@@ -1,21 +1,22 @@
-import React, { useState } from 'react'
-import './navbarStyle.css'
+import React, { useState } from 'react';
+import './navbarStyle.scss'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => setNav(!nav)
     return (
-        <div className='navbar'>
-            <div className='container'>
-                <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
-                    <li >Home</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contacts</li>
+        <div className="navbar">
+            <div className="container">
+                <ul className={nav ? "navMenu active" : "navMenu"}>
+                    <li><Link to='/home'>Home</Link></li>
+                    <li><Link to='/skills'>Skills</Link></li>
+                    <li><Link to='/projects'>Projects</Link></li>
+                    <li><Link to='/contacts'>Contacts</Link></li>
                 </ul>
-                <div className='hamburger' onClick={handleNav}>
-                    {!nav ? (<FaBars className='icon' />) : (<FaTimes className='icon' />)}
+                <div className="hamburger" onClick={handleNav}>
+                    {!nav ? (<FaBars className="icon" />) : (<FaTimes className="icon" />)}
                 </div>
             </div>
         </div>
