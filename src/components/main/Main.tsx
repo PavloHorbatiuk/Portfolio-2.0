@@ -4,16 +4,19 @@ import picture from "./../../assets/IMG_20170701_154559.jpg"
 import { Parallax } from 'react-parallax';
 import BackgroundImage from './../../assets/keyboard.jpg';
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet"
 let urlCv = './../../assets/Resume/PavloHorbatiukCV.pdf'
-
 
 
 function Main() {
 
 
-
     return (
-        <div >
+        <div>
+            <Helmet>
+                <meta charSet="utf-8" name='description' content='my portfolio' />
+                <title>home</title>
+            </Helmet>
             <Parallax
                 bgImage={BackgroundImage}
                 strength={200}
@@ -22,7 +25,9 @@ function Main() {
             >
                 <div className={s.container}>
                     <div className={s.content}>
-                        <div><h1><span>I'm</span> Pavlo Horbatiuk</h1></div>
+                        <div>
+                            <h1><span>I'm</span> Pavlo Horbatiuk</h1>
+                        </div>
                         <p className={s.text}>
                             I'm a front‑end developer focused on
                             crafting clean &amp; user‑friendly experiences, I am passionate about
@@ -30,8 +35,8 @@ function Main() {
                             around me.
                         </p>
                         <div>
-                            <Link to={urlCv} target="_blank" download >
-                                <button > Download CV</button>
+                            <Link to={urlCv} target="_blank" download>
+                                <button> Download CV</button>
                             </Link>
                         </div>
                     </div>
@@ -40,7 +45,7 @@ function Main() {
                     </div>
                 </div>
             </Parallax>
-        </div >
+        </div>
     )
 }
 

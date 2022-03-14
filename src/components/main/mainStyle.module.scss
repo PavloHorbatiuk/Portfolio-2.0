@@ -45,7 +45,10 @@ padding-top: 1rem;
 }
 @media screen and (max-width: 769px) {
     .container .picture {
-        max-width: 90%;
-        max-height: 90%;
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .container{
+        padding: 1rem;      
     }
   }

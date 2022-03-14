@@ -7,13 +7,17 @@ import './defaultStyle.scss'
 import Projects from './components/Projects/Projects';
 import Footer from "./components/footer/Footer";
 import Contact from './components/contact/Contact';
-
+import { Helmet } from "react-helmet";
 
 
 function App() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" name='description' content='first page' />
+        <title>home</title>
+      </Helmet>
       <Navbar />
       <Main />
       <Skills />

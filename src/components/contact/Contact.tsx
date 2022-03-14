@@ -1,7 +1,7 @@
 import './Contact.scss';
 import React from 'react';
 import emailjs from '@emailjs/browser';
-
+const Zoom = require('react-reveal/Zoom')
 const Contact = () => {
 
 
@@ -22,7 +22,7 @@ const Contact = () => {
             <div className="container">
                 <div className="form-container">
                     <form onSubmit={sendEmail}>
-                        <h1><span>Contact</span> me</h1>
+                        <Zoom>  <h1><span>Contact</span> me</h1></Zoom>
                         <div>
                             <label>Name</label>
                             <input type="text" name="name" placeholder='Enter your name' />

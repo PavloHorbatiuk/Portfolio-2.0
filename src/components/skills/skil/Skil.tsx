@@ -11,7 +11,7 @@ function Skil(props: SkilType) {
     return (
         <div className={s.generalContainer}>
             <div className={s.contentContainer}>
-                <img className={s.img} src={props.imgLink} alt=''/>
+                <img className={s.img} src={props.imgLink} alt='' />
                 <h5 className={s.title}>{props.title}</h5>
             </div>
         </div>
