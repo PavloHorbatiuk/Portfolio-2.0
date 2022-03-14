@@ -5,10 +5,19 @@ import converterImg from './../../assets/currencyConverter.png'
 import SocialNeworkImg from './../../assets/socialNetwork.png'
 import playCards from './../../assets/playcards.png'
 import todoList from './../../assets/toDoList.png'
+import { Helmet } from 'react-helmet'
+
 const Zoom = require('react-reveal/Zoom')
+
+
+
 function Projects() {
     return (
         <div className={s.generalContainer}>
+            <Helmet>
+                <meta charSet="utf-8" name='description' content='my projects' />
+                <title>projects</title>
+            </Helmet>
             <section className={s.contentContainer}>
                 <div className={s.title}>
                     <Zoom><h1>My Projects</h1></Zoom>

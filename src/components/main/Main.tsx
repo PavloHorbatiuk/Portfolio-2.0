@@ -3,9 +3,7 @@ import s from './mainStyle.module.scss'
 import picture from "./../../assets/IMG_20170701_154559.jpg"
 import { Parallax } from 'react-parallax';
 import BackgroundImage from './../../assets/keyboard.jpg';
-import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet"
-let urlCv = './../../assets/Resume/PavloHorbatiukCV.pdf'
 
 
 function Main() {
@@ -13,10 +11,7 @@ function Main() {
 
     return (
         <div>
-            <Helmet>
-                <meta charSet="utf-8" name='description' content='my portfolio' />
-                <title>home</title>
-            </Helmet>
+         
             <Parallax
                 bgImage={BackgroundImage}
                 strength={200}
@@ -34,10 +29,11 @@ function Main() {
                             building excellent software that improves the lives of those
                             around me.
                         </p>
+
                         <div>
-                            <Link to={urlCv} target="_blank" download>
+                            <a href={require("./../../assets/Resume/PavloHorbatiukCV.pdf")} download="CV">
                                 <button> Download CV</button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className={s.photo}>

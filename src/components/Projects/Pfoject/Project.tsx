@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import s from './Project.module.scss'
 type ProjectType = {
     img: string
@@ -11,10 +10,6 @@ type ProjectType = {
 function Project(props: ProjectType) {
     return (
         <div className={s.generalContainer}>
-            <Helmet>
-                <meta charSet="utf-8" name='description' content='my projects' />
-                <title>projects</title>
-            </Helmet>
             <div className={s.contnent}>
                 <div>
                     <img className={s.img} src={props.img} alt={`${props.title} Project`} />
