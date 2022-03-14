@@ -3,7 +3,6 @@ import s from './mainStyle.module.scss'
 import picture from "./../../assets/IMG_20170701_154559.jpg"
 import { Parallax } from 'react-parallax';
 import BackgroundImage from './../../assets/keyboard.jpg';
-import { Helmet } from "react-helmet"
 
 
 function Main() {
@@ -11,7 +10,6 @@ function Main() {
 
     return (
         <div>
-         
             <Parallax
                 bgImage={BackgroundImage}
                 strength={200}

@@ -9,7 +9,6 @@ import cssImg from './../../assets/Skills/css.png'
 import reduxImg from './../../assets/Skills/redux.png'
 import postmanImg from './../../assets/Skills/postman.png'
 import jsImg from './../../assets/Skills/1720372_code_javascript_js_icon.png'
-import { Helmet } from 'react-helmet';
 import Skil from './skil/Skil'
 const Zoom = require('react-reveal/Zoom')
 
@@ -18,10 +17,6 @@ function Skills() {
 
     return (
         <div className={s.generalContainer}>
-            <Helmet>
-                <meta charSet="utf-8" name='description' content='my skills' />
-                <title>skills</title>
-            </Helmet>
             <section className={s.contentContainer}>
                 <div className={s.title}>
                     <Zoom><h1>Skills</h1></Zoom>
